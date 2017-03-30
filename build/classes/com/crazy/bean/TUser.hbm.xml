@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="com.crazy.bean">
+	<class name="TUser" table="t_user">
+		<id name="uid" column="uid">
+			<generator class="native"></generator>
+		</id>
+		<property name="uname" column="uname"></property>
+		<property name="upwd" column="upwd"></property>
+		<property name="umessage" column="umessage"></property>
+		<property name="utime" column="utime"></property>
+	</class>
+</hibernate-mapping>
